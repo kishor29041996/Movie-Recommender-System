@@ -43,19 +43,19 @@ Files:
 - Colab Notebook
 
 ## 📊 Project Workflow
-1. Data Collection
+# 1. Data Collection
 
-Load both TMDB datasets.
+  Load both TMDB datasets.
 - movies = pd.read_csv("tmdb_5000_movies.csv")
 - credits = pd.read_csv("tmdb_5000_credits.csv")
   
-2. Data Preprocessing
+#2. Data Preprocessing
 - Merge movies and credits datasets
 -Handle missing values
 - Remove unnecessary columns
 -Extract useful information from JSON-like columns
 
-3. Feature Engineering
+# 3. Feature Engineering
    
 Extract:
 - Top 3 Cast Members
@@ -68,7 +68,7 @@ Create a combined feature called Tags.
 Example:
 Action Adventure Hero Space Alien JamesCameron SamWorthington
 
-4. Text Processing
+# 4. Text Processing
 - Convert text to lowercase
 - Remove spaces
 - Apply stemming using Porter Stemmer
@@ -85,16 +85,16 @@ Example:
 - run
 - runner
   
-5. Vectorization
+# 5. Vectorization
    
 Convert movie tags into numerical vectors using:
 - CountVectorizer
 
-Parameters:
+# Parameters:
 - max_features = 5000
 - stop_words = 'english'
   
-6. Similarity Calculation
+# 6. Similarity Calculation
 Compute cosine similarity between movie vectors.
 
 from sklearn.metrics.pairwise import cosine_similarity
@@ -104,7 +104,7 @@ Result:
 Similarity Matrix
 Every movie gets a similarity score with every other movie.
 
-7. Recommendation Function
+# 7. Recommendation Function
 
 Input:
 Movie Name
@@ -141,7 +141,7 @@ Movie-Recommender-System/
 ├── setup.sh                # Deployment setup script
 └── README.md               # Project documentation
 ```
-🧠 Machine Learning Concepts Used
+## 🧠 Machine Learning Concepts Used
 - Content-Based Filtering
 - Natural Language Processing (NLP)
 - Feature Engineering
@@ -150,9 +150,9 @@ Movie-Recommender-System/
 - Text Preprocessing
 - Stemming
 
-  🎯 Learning Outcomes
-This project demonstrates practical skills in:
+## 🎯 Learning Outcomes
 
+This project demonstrates practical skills in:
 - Data preprocessing
 - Feature engineering
 - NLP techniques
@@ -160,21 +160,6 @@ This project demonstrates practical skills in:
 - Similarity-based machine learning
 - Model serialization using Pickle
 - Streamlit application deployment
-
-  # Home Page
-+---------------------------------------------+
-| 🎬 Movie Recommender System                 |
-|                                             |
-| Select a Movie: [Avatar ▼]                 |
-|                                             |
-| [Recommend]                                |
-|                                             |
-| Recommended Movies                         |
-| • Guardians of the Galaxy                  |
-| • John Carter                              |
-| • Star Trek                                |                            |
-| • The Fifth Element                        |
-+---------------------------------------------+
 
 ## 📈 Future Improvements
 - Hybrid recommendation system (Content + Collaborative Filtering)
