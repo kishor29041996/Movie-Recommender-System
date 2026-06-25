@@ -49,7 +49,7 @@ Files:
 - movies = pd.read_csv("tmdb_5000_movies.csv")
 - credits = pd.read_csv("tmdb_5000_credits.csv")
   
-#2. Data Preprocessing
+# 2. Data Preprocessing
 - Merge movies and credits datasets
 -Handle missing values
 - Remove unnecessary columns
@@ -90,7 +90,7 @@ Example:
 Convert movie tags into numerical vectors using:
 - CountVectorizer
 
-# Parameters:
+Parameters:
 - max_features = 5000
 - stop_words = 'english'
   
@@ -119,7 +119,6 @@ Avatar
 
 Recommendations:
 
-- Titanic
 - John Carter
 - Guardians of the Galaxy
 - Star Trek
